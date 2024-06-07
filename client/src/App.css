@@ -1,0 +1,71 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+  gap: 16px;
+}
+
+.chat-box-outer {
+  width: 400px;
+  height: 600px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.chat-box-inner {
+  padding: 8px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.reverse {
+  /* direction: rtl; */
+  flex-direction: row-reverse;
+}
+
+.user-id {
+  font-size: 12px;
+  margin-right: 16px;
+}
+
+.fa-user {
+  margin: 0 2px;
+}
+
+.reverse .user-id {
+  margin-left: 16px;
+}
+
+.message {
+  background-color: #54A0D8;
+  padding: 4px;
+  max-width: calc((100% / 2) - 16px);
+  margin-bottom: 8px;
+  word-wrap: break-word;
+  border-radius: 6px;
+}
+
+.action {
+  display: flex;
+  width: 400px;
+  gap: 4px;
+  height: 50px;
+}
+
+.action textarea {
+  flex-grow: 1;
+  border-radius: 6px;
+}
+
+.action--send {
+  border-radius: 6px;
+}
